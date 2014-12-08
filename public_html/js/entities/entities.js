@@ -122,7 +122,9 @@ update: function(delta){
     
    },
    
-   collideHandler: function(){
+   collideHandler: function(response){
+       if(response.b.type === 'badguy'){}
+            me.state.change(me.state.MENU); 
        
    }
 }); 
