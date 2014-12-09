@@ -1,6 +1,7 @@
 game.TitleScreen = me.ScreenObject.extend({
 	/**	
-	 *  action to perform on state change
+	 *  this loads my title screeen and make it so that  i can press enter 
+         *  to enter my game.
 	 */
 	onResetEvent: function() {	
 		var titleImage = new me.Sprite(0, 0, me.loader.getImage("title-screen")); 
@@ -30,7 +31,7 @@ game.TitleScreen = me.ScreenObject.extend({
 
 	
 	/**	
-	 *  action to perform when leaving this screen (state change)
+	 *  
 	 */
 	onDestroyEvent: function() {
 	   me.input.unbindKey(me.input.KEY.ENTER);

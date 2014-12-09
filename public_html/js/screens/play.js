@@ -7,7 +7,7 @@
 	 *  action to perform on state change
 	 */
 	onResetEvent: function() {
-		// reset the score
+		// these codes help me load my  level and go to the right 
 		game.data.score = 0;
                 
                 me.levelDirector.loadLevel("level04");
@@ -17,7 +17,7 @@
                 
                 me.input.bindKey(me.input.KEY.RIGHT, "right"); 
                 
-                me.input.bindKey(me.input.KEY.UP, "right"); 
+                
                 
 		// add our HUD to the game world
 		this.HUD = new game.HUD.Container();
